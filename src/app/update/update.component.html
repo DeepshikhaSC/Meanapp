@@ -1,0 +1,25 @@
+<form>
+    <label>
+      <p class="label-txt">ENTER YOUR NAME</p>
+      <input type="text" class="input" name="Username" [(ngModel)]="Username">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <label>
+      <p class="label-txt">ENTER YOUR PASSWORD</p>
+      <input type="password" class="input" name="Password"[(ngModel)]="Password">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <label>
+      <p class="label-txt">Description</p>
+      <input type="text" class="input" name="desc"[(ngModel)]="desc">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <input type="file" name="image" (change)="imagefile($event)"><br>
+    <button type="submit" (click)="updatep()">submit</button>
+  </form>

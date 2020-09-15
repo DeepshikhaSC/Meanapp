@@ -1,0 +1,79 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<div class="content">
+<div class="container">
+    	<div class="row">
+	
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30 text-center">
+                        <h2>Book For Haircut</h2>
+                        </div>
+                        </div>
+	<div class="row">
+	
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30">
+                        <div class="tour-booking-form">
+                            <form>
+                                <div class="row">
+                                    
+                                    
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <label class="control-label" for="Day">Date</label>
+                                                
+                                
+                                                <input id="datepicker" name="date"[(ngModel)]="date" type="date" placeholder="Date" class="form-control" required>
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span> 
+                                            </div>
+                                        
+                                    </div>
+                                
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <label class="control-label required" for="persons">Number of Persons:</label>
+                                            <input id="persons" name="persons"[(ngModel)]="persons" type="text" placeholder="Number of persons" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <label class="control-label" for="name">Name</label>
+                                            <input id="name"  name="name"[(ngModel)]="name" type="text" placeholder="First Name" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <label class="control-label" for="email"> Email</label>
+                                            <input id="email"  name="email"[(ngModel)]="email"type="text" placeholder="xxxx@xxxx.xxx" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <label class="control-label" for="phone"> Phone</label>
+                                            <input id="phone" name="phone"[(ngModel)]="phone"     type="text" placeholder="(222) 222-2222" class="form-control" required>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                        <div class="form-group">
+                                            <label class="control-label" for="city">City</label>
+                                            <input id="city"  name="city"[(ngModel)]="city"  type="text" placeholder="Ahmedabad" class="form-control" required>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <button (click)="insertcat()" class="btn btn-primary">Book</button>
+                                    </div>
+                                </div>
+                                </form>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    
+	</div>
+	</div>	

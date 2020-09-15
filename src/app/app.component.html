@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="container-fluid" style="background-color: aqua;">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">FindUs</a>
+    </div>
+    
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a routerLink="/login">Login</a></li>
+      <li><a routerLink='/register'>Register</a></li>
+      <li><a routerLink="/show" >Show</a></li>
+      <li><a routerLink="/update/1">update</a></li>
+      <li><a (click)='logout()'>Logout</a></li>
+      <li><a routerLink="/categories">categories</a></li>
+      <li><a routerLink="/bookingdetails">Bookingdetails</a></li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
